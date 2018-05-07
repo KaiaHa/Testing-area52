@@ -1,0 +1,89 @@
+/* Margin's start */
+
+.margin-10 {
+    margin: 0.1em;
+}
+
+.margin-20 {
+    margin: 0.2em;
+}
+
+.margin-50 {
+    margin: 0.5em;
+}
+
+.margin-100 {
+    margin: 1em;
+}
+
+.margin-150 {
+    margin: 1.5em;
+}
+
+.margin-200 {
+    margin: 2em;
+}
+
+.margin-0 {
+    margin: 0em;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+/* Margin's end */
+
+/* border's start */
+
+.border-001-solid {
+  border: solid 0.01em;
+}
+.border-01-solid {
+    border: solid 0.1em;
+}
+.border-02-solid {
+    border: solid 0.2em;
+}
+
+
+.border-001-dashed {
+  border: dashed 0.01em;
+}
+.border-01-dashed {
+    border: dashed 0.1em;
+}
+.border-02-dashed {
+    border: dashed 0.2em;
+}
+
+
+.border-001-ridge {
+  border: ridge 0.01em;
+}
+.border-01-ridge {
+    border: ridge 0.1em;
+}
+.border-02-ridge {
+    border: ridge 0.2em;
+}
+
+
+
+/* border's end* /
+
+  /* Padding start */
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-1 {
+    padding: 1em;
+}
+
+.padding-01 {
+    padding: 0.1em;
+}
+
+/* Padding end */

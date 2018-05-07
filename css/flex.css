@@ -1,0 +1,186 @@
+/*Justify Content, moves elements horisontaly within the container. <--->  */
+
+/* center elements in the middle of the container*/
+.flex-justify-center{
+    display:flex;
+    justify-content: center;
+}
+
+/* place the elements in the beginning of the container*/
+.flex-justify-start{
+    display:flex;
+    justify-content:flex-start;
+}
+
+/*place the elements in the end of the container*/
+.flex-justify-end{
+    display:flex;
+    justify-content:flex-end;
+}
+
+/* Adds space around each element in the container.  (space -- element -- space -- element -- space) */
+.flex-justify-space-around{
+    display:flex;
+    justify-content: space-around;
+}
+
+/* Adds space between the elements in the container */
+.flex-justify-space-between{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/*Flex-wrap, moves items horizontalty within the container, <---> */
+
+/*Flex nowrap flex items will be on one line*/
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+
+/*Flex wrap wraps onto multiple lines from top to bottom*/
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+/*Flex wrap reverse, wraps onto multiple lines from bottom to top*/
+.flex-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+
+/*flex item order. must have order in every item.*/
+.item-order{
+    order: 1;
+}
+.item-order-2{
+    order: 2;
+}
+.item-order-3{
+    order: 3;
+}
+/*flex item order ends*/
+
+.item-grow-example{
+    /*grow example*/
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: stretch;
+        }
+      .box-example{
+        flex-grow: 1;
+        border: 3px solid black;
+      }
+      
+      .box-example-1 {
+        flex-grow: 2;
+        border: 3px solid black;
+      }
+
+/*item grow example end*/
+
+/*flex item grow. higher number the bigger box*/
+.item-grow{
+    flex-grow: 1;
+}
+.item-grow-1{
+    flex-grow: 2;
+}
+.item-grow-2{
+    flex-grow: 3;
+}
+/*flex item grow end*/
+
+/*item shrink. the higher number the smaller box.*/
+.item-shrink{
+    flex-shrink:0;
+}
+.item-shrink-1{
+    flex-shrink:1;
+}
+.item-shrink-2{
+    flex-shrink:2;  
+}
+/*item shrink end*/
+ 
+/*align content starts here*/
+.flex-align-content-start{
+    align-content: flex-start;
+}
+.flex-align-content-end{
+    align-content: flex-end;
+}
+.flex-align-content-center{
+    align-content: center;
+}
+.flex-align-content-space-between{
+    align-content: space-between;
+}
+.flex-align-content-space-around{
+    align-content: space-around;
+}
+.flex-align-content-stretch{
+    align-content: stretch;
+}
+/*align content ends here*/
+
+
+.flex-display{
+    display:flex;
+}
+
+
+/* Align-self: specifies the aligments (stats) of an specific element/item */
+/** will only affect the specific element/item and not the other ones in the same row/column **/
+
+/*align-self:center will align the item to the center of the container, without affecting the others*/
+/** example: second one = align-self:     # - #   where it goes to the center of the row/column **/
+
+.flex-align-self-center{
+    display:flex;
+    align-self:center;
+}
+
+/* align-self:flex-start will align the item to the top of the container (within the row/column)*/
+/** example: # " #  where the " goes to the top of the element**/
+
+.flex-align-self-start{
+    display:flex;
+    align-self:flex-start;
+}
+
+/* align-self:flex-end  will align the item to the bottom of the container (within the row/column */
+/** example:  # _ #  where the element _ goes to the bottom of the container. **/
+
+.flex-align-self-end{
+    display:flex;
+    align-self: flex-end;
+}
+
+
+/* align-self:stretch  will stretch the item to fit the container.
+/** example: # # #  where the element is stretched to fit the element (still respecting min and max width).. **/
+
+.flex-align-self-stretch{
+    display:flex;
+    align-self:stretch;
+}
+
+
+
+/*flex direction*/
+
+/*flex-direction-row  to make the elements go in a line horisontaly */
+
+.flex-direction-row{
+    display:flex;
+    flex-direction:row;
+}
+
+/*flex-direction-column  make the elements go in a line vertically */
+
+.flex-direction-column{
+    display:flex;
+    flex-direction:column;
+}

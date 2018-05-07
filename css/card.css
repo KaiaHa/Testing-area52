@@ -1,0 +1,68 @@
+/* card with grid + grid + flex */
+
+.grid-card-layout{
+    display:grid;
+    grid-template-rows: 10% 1fr 10%;
+    grid-template-columns:10% 1fr 10%;
+    height:100%;
+}
+
+.grid-inside-ver2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 2/3;
+    grid-column: 2/3;
+ }
+
+/* size */
+
+.size1{
+    height: 60%;
+    width: 30%;
+}
+
+/* additional */
+
+.height100{
+    height:100%;
+}
+
+.width30{
+    width: 30%;
+}
+
+/* borders */
+
+.border-solid-right{
+    border-right: solid 1px black;
+}
+
+.border-solid-top{
+    border-top: solid 1px black;
+}
+
+/* Base html functions */
+
+.viewport {
+    height: 100vh;
+    width: 100vw;
+}
+
+.body {
+    margin: 0px;
+}
+
+/* justify content */
+
+ .jusify-center{
+     justify-content: center;
+ }
+
+ .pad-text{
+     padding: 1em;
+ }
+
+ /* overflow */
+ .overflow-hidden{
+     overflow: hidden;
+ }

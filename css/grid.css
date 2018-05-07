@@ -1,0 +1,80 @@
+/* Grid
+Brukt 3 versjoner:
+Layout med Navbar - hovedinnhold - Bunnlinje
+Layout med Navbar - Venstre sidebar - hovedinnhold - Bunnlinje
+Layout med Navbar - hovedinnhold - Høyre sidebar - Bunnlinje
+Alle vil få hvert sitt @media-sett for små skjermer.
+For å sikre fastsatt design av siden, er det satt fixed høyde og bredde på elementer som ikke er main. Størrelse på Main er satt til auto. Navbar er satt til 2 em, mens bunnlinje er satt til 2 em. Ved bruk av sidebar er bredde satt til 10em.
+ */
+.grid-layout-nosidebar{
+  display: grid;
+  height: 100vh;
+  grid-template: 2em 1fr 2em / 1fr;
+  grid-template-areas:
+  "nav"
+  "main"
+  "footer";
+}
+.grid-layout-sidebar-left{
+  display: grid;
+  height: 100vh;
+  grid-template: 2em 1fr 2em / 10em 1fr;
+  grid-template-areas:
+  "nav nav"
+  "sidebar main"
+  "footer footer";
+}
+.grid-layout-sidebar-right{
+  display: grid;
+  height: 100vh;
+  grid-template: 2em 1fr 2em / 1fr 10em;
+  grid-template-areas:
+  "nav nav"
+  "main sidebar"
+  "footer footer";
+}
+
+
+/* grid areas */
+
+/* Nav */
+.grid-nav{
+  grid-area: nav;
+}
+/* sidebar */
+.grid-sidebar{
+  grid-area: sidebar;
+}
+.grid-main{
+  grid-area: main;
+}
+.grid-footer{
+  grid-area: footer;
+}
+
+
+/* page splits */
+/* use case: splitting the page in 2 equal parts, either horizontally or vertically */
+.grid-layout-vertical-split{
+  display: grid;
+  grid-template:
+  "right left"
+}
+.grid-layout-horizontal-split{
+  display: grid;
+  grid-template:
+  "top"
+  "Bottom"
+}
+.grid-area-right{
+  grid-area: right;
+}
+.grid-area-left{
+  grid-area: left;
+}
+.grid-area-top{
+  grid-area: top;
+}
+.grid-area-bottom{
+  grid-area: bottom;
+}

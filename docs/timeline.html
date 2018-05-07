@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/colors.css">
+        <link rel="stylesheet" href="../css/flex.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/grid.css">
+        <link rel="stylesheet" href="../css/shadows.css">
+        <link rel="stylesheet" href="../css/sizes.css">
+        <link rel="stylesheet" href="../css/Templol.css">
+        <link rel="stylesheet" href="../css/utility.css">
+        <link rel="stylesheet" href="../css/visual.css">
+        <link rel="stylesheet" href="../css/forms.css">
+        <link rel="stylesheet" href="../css/timeline.css">
+        <link rel="stylesheet" href="../css/test.css">
+        <!-- CSS end -->
+        <title>Code library</title>
+        <body class="body">
+            <div class="flex-direction-row flex-justify-center">
+                <!--timeline bar-->
+                <div class="timeline"></div>
+                <div class="order2 flex-align-self-center" onclick="toggle_visibility('foo')">
+                    <div class="knapp"></div>
+                </div>
+                <!--empty box order 1 keeps the container left.-->
+                <div class="order1">
+                    <div class="container-timeline-card container-timeline-blank"></div>
+                </div>
+                <!--content box order 3 keeps the container Right.-->
+                <div class="order3">
+                    <div id="showHideDiv" class="container-timeline-card container-timeline-filling">
+                        cåntainer båkks
+                    </div>
+                </div>
+                <!--new line in the timeline and repeating.-->
+            </div>
+            <div class="flex-direction-row flex-justify-center">
+                <div class="order2 flex-align-self-center">
+                    <div class="knapp"></div>
+                </div>
+                <div class="order3">
+                    <div class="container-timeline-card container-timeline-blank"></div>
+                </div>
+                <div class="order1">
+                    <div class="container-timeline-card container-timeline-filling">
+                        cåntainer båkks
+                    </div>
+                </div>
+            </div>
+
+        </body>
+    </head>
+</html>

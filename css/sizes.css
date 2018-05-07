@@ -1,0 +1,46 @@
+/* Box container,that uses 100% of the screen*/
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+   
+/*Box sizes 3em-12em*/
+
+.box-main-3em{
+    width: 3em;
+    height:3em;
+}
+
+.box-main-6em{
+    width: 6em;
+    height:6em;
+}
+
+.box-main-9em{
+    width: 9em;
+    height:9em;
+}
+
+.box-main-12em{
+    width: 12em;
+    height:12em;
+}
+.box-main-15em{
+    width: 15em;
+    height:15em;
+}
+
+.box-rectangle-main{
+    width:15em;
+    height: 9em;
+}
+
+.box-rectangle-secondary{
+    width:18em;
+    height:12em;
+}
+
+.width-100p{
+    width: 100%;
+}

@@ -1,0 +1,146 @@
+.primary {
+    color: #181818;
+}
+
+.primary-dark {
+    color: #00659c;
+}
+
+.primary-light {
+    color: #39a5dc;
+}
+
+.primary-bg {
+    background-color: #C7C7C7;
+}
+
+.primary-dark-bg {
+    background-color: #181818;
+}
+
+.primary-light-bg {
+    background-color: #39a5dc;
+}
+
+.secondary {
+    color: #C7C7C7;
+}
+
+.secondary-dark {
+    color: #292e34;
+}
+
+.secondary-light {
+    color: #ededed;
+}
+
+.secondary-bg {
+    background-color: #72767b;
+}
+
+.secondary-dark-bg {
+    background-color: #292e34;
+}
+
+.secondary-light-bg {
+    background-color: #ededed;
+}
+
+.success {
+    color: #3f9c35;
+}
+
+.success-dark {
+    color: #1e4f18;
+}
+
+.success-light {
+    color: #9ecf99;
+}
+
+.success-bg {
+    background-color: #3f9c35;
+}
+
+.success-dark-bg {
+    background-color: #1e4f18;
+}
+
+.success-light-bg {
+    background-color: #9ecf99;
+}
+
+.danger {
+    color: #8b0000;
+}
+
+.danger-dark {
+    color: #470000;
+}
+
+.danger-light {
+    color: #cc0000;
+}
+
+.danger-bg {
+    background-color: #8b0000;
+}
+
+.danger-dark-bg {
+    background-color: #470000;
+}
+
+.danger-light-bg {
+    background-color: #cc0000;
+}
+
+.warning {
+    color: #ec7a08;
+}
+
+.warning-dark {
+    color: #b35c00;
+}
+
+.warning-light {
+    color: #f39d3c;
+}
+
+.warning-bg {
+    background-color: #ec7a08;
+}
+
+.warning-dark-bg {
+    background-color: #b35c00;
+}
+
+.warning-light-bg {
+    background-color: #f39d3c;
+}
+
+.background {
+    background-color: #fafafa;
+}
+
+.highlight {
+    color: #fafafa;
+}
+
+.form-button{
+  color: inherit;
+  background-color: inherit;
+}
+.form-button-animated{
+  color: inherit;
+  background-color: inherit;
+}
+.form-button:hover{
+  background-color: #C0C0C0 ;
+}
+.form-button:disabled {
+    background-color: #303030;
+}
+.form-button:active {
+  background-color: #f2f2f2;
+  box-shadow: inset 0;
+}

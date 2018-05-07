@@ -1,0 +1,65 @@
+.form-label{
+  font-style: italic;
+}
+.form-button{
+  display: block;
+  border: 0.1em solid;
+  margin: 0.2em;
+  padding: 0.3em 2em;
+  text-shadow: 0.06em 0.03em  black;
+  box-shadow: inset 0.3em 0.3em #f5f2f2;
+}
+.form-button-animated{
+  display: block;
+  border: 0.1em solid;
+  margin: 0.2em;
+  padding: 0.3em 2em;
+  text-shadow: 0.06em 0.03em  black;
+  box-shadow: inset 0.3em 0.3em #f5f2f2;
+  animation-duration:5s;
+  animation-name:button;
+}
+@keyframes button{
+  from{margin-left:-20%;}
+  to{margin-left:0%;}
+}
+.form-text{
+  display: block;
+  border: 0.1em solid;
+  margin: 0.2em;
+  padding: 0.4em 0em 0.4em 0.4em;
+  box-shadow: 0.9em 0.3em 0.4em #7a7a7a;
+}
+.form-radio{
+  display: block;
+  border: 0.1em solid;
+  margin: 0.2em;
+  padding: 0.3em 2em;
+}
+.form-checkbox{
+  display: block;
+  border: 0.1em solid;
+  margin: 0.2em;
+  padding: 0.3em 2em;
+}
+.form-datalist{
+  display: block;
+  border: 0.1em solid;
+  margin: 0.2em;
+  padding: 0.3em 0em 0.3em 0.3em;
+}
+/* Menu */
+.menu-dropdown{
+  display:block;
+/*  overflow:hidden;
+  width:100%;
+  border: solid 1px red;
+  float: none; */
+}
+.menu-container{
+  display:none;
+  border: solid 1px #181818;
+}
+.menu-dropdown:hover .menu-container{
+  display: block;
+}

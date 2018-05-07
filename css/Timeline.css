@@ -1,0 +1,129 @@
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: absolute;
+    max-width: 100000px;
+    margin: 0 auto;
+}
+.timeline{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    margin-bottom: 0px;
+    height: 100%;
+}
+/*button for the timeline*/
+.knapp{
+    border: solid 4px #ff00ff;
+    background-color: #ff05ff;
+    width: 5px;
+    Top: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    z-index: 1;
+}
+/*the timeline box*/
+.container-timeline-card{
+    display:flex;
+    height:5em;
+    width:7em;
+    justify-content: center;
+    align-items: center;
+}
+/*empty box*/
+.container-timeline-filling{
+    border: solid 3px black;
+    background-color: white;
+}
+/*hide the empty box and keep the button in middle order 1 or 3*/
+.container-timeline-blank{
+    border: solid 3px green;
+}
+.body{
+    background-color: green;
+}
+
+/*order class, decide which order the container goes in the div (need to be modified)*/
+
+.order1{
+    display:flex;
+    order:1;
+}
+
+.order2{
+    display:flex;
+    order:2;
+}
+
+.order3{
+    display:flex;
+    order:3;
+}
+
+.container {
+    border:1px solid lime;
+    overflow:hidden;
+    position:relative;
+    /* the container's height will determine the height of its slider  */
+    height:350px; 
+}
+
+
+.containers {
+    border:1px solid lime;
+    overflow:hidden;
+    position:relative;
+    /* the container's height will determine the height of its slider  */
+    /*height:350px; */
+}
+
+
+.slider {
+	overflow-y: scroll;
+	/* complete liquid height based on the parent's height!! */
+    height:100%;
+
+    /* only transition on transform properties which are hardware accelerated = way better performances */
+	-webkit-transition:-webkit-transform .3s ease;
+       -moz-transition:   -moz-transform .3s ease;
+        -ms-transition:    -ms-transform .3s ease;
+            transition:        transform .3s ease;
+}
+
+.slider { 
+    /* visible */
+    -webkit-transform: translate(0, 0%);
+       -moz-transform: translate(0, 0%);
+        -ms-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+}
+.container:hover .slider { 
+    /* completely offscreen */
+    -webkit-transform: translate(0, -100%);
+       -moz-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+}
+
+
+
+/* -------- not interesting styles ----------- */
+body {
+    background:#eee;
+    margin:50px;
+}
+.slider {
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+            box-sizing:border-box;
+
+    padding:20px;
+    background: pink;
+    border:1px solid hotpink;
+}

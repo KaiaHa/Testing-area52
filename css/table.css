@@ -1,0 +1,23 @@
+.table tr td, 
+.table tr th {
+    border: 1px solid #000000;
+  }
+
+  .table {border-collapse: collapse;
+  }
+  
+ 
+  td {text-align: center;}
+
+  .tbody-hover>tr:hover{
+      background-color: aqua;
+  }
+  
+  .tbody>td:hover{
+      background-color: aqua;
+  }
+
+  .tabled{
+      border-bottom: solid 0.02em black;
+  }
+  
