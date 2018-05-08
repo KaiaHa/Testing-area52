@@ -1,90 +1,146 @@
 
-  .content {
-    margin: 5% 0 0 0%;
-  }
-  .shake {
-      display:inline-block
-  }
-  .shake {
-      display:block;
-      position:relative;
-  }
-  img{
-  display: block;
-  height: 250px;
-  width: 250px;
-  border-radius: 50% 50% 50% 50%;
-  }
-  h2.shake,
-  .shake.inline {
-      display:inline-block
-  }
-  h1,p,h2{
-    color:rgb(235, 28, 28);
-  }
-  @-webkit-keyframes spaceboots {
-   0%,
-        100% {
-          transform: translateX(0);
-        }
-        10% {
-          transform: translateX(-9px);
-        }
-        20% {
-          transform: translateX(8px);
-        }
-        30% {
-          transform: translateX(-7px);
-        }
-        40% {
-          transform: translateX(6px);
-        }
-        50% {
-          transform: translateX(-5px);
-        }
-        60% {
-          transform: translateX(4px);
-        }
-        70% {
-          transform: translateX(-3px);
-        }
-        80% {
-          transform: translateX(2px);
-        }
-        90% {
-          transform: translateX(-1px);
-        }
-  }
-  .shake:hover,
-  .shake:focus {
-      -webkit-animation-name: spaceboots;
-      -webkit-animation-duration: .10s;
-      -webkit-transform-origin:50% 50%;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-  }
+.content {
+    margin: 5% 0 0;
+}
+.shake {
+    display: inline-block;
+}
+.shake {
+    display: block;
+    position: relative;
+}
+img {
+    display: block;
+    height: 250px;
+    width: 250px;
+    border-radius: 50% 50% 50% 50%;
+}
+.shake.inline,
+h2.shake {
+    display: inline-block;
+}
+h1,
+h2,
+p {
+    color: rgb(235, 28, 28);
+}
+@-webkit-keyframes spaceboots {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-9px);
+    }
+    20% {
+        transform: translateX(8px);
+    }
+    30% {
+        transform: translateX(-7px);
+    }
+    40% {
+        transform: translateX(6px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    60% {
+        transform: translateX(4px);
+    }
+    70% {
+        transform: translateX(-3px);
+    }
+    80% {
+        transform: translateX(2px);
+    }
+    90% {
+        transform: translateX(-1px);
+    }
+}
+.shake:focus,
+.shake:hover {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.10s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
 
-  .face:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
+.sq-animation-shake {
+    animation-name: sq-shake;
+}
+@keyframes sq-shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-9px);
+    }
+    20% {
+        transform: translateX(8px);
+    }
+    30% {
+        transform: translateX(-7px);
+    }
+    40% {
+        transform: translateX(6px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    60% {
+        transform: translateX(4px);
+    }
+    70% {
+        transform: translateX(-3px);
+    }
+    80% {
+        transform: translateX(2px);
+    }
+    90% {
+        transform: translateX(-1px);
+      }
+}
+.sq-animation-toggle:not(:hover):not(.sq-hover) [class*='sq-animation-'] {
+    animation-name: none;
+}
+[class*='sq-animation-'] {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+.sq-animation-fade {
+  animation-name: sq-fade;
+  animation-duration: 0.9s;
+  animation-timing-function: linear;
+}
+@keyframes sq-fade {
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+  100% {
+    opacity: 1;
+  }
+}
+.sq-animation-toggle:not(:hover):not(.sq-hover) [class*='sq-animation-'] {
+  animation-name: none;}
+  [class*='sq-animation-'] {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+  .sq-animation-rotate{
+      display: inline-block;
+      animation-name: sq-rotate;
+      animation-duration: 0.9s;
+      animation-timing-function: linear;
+  }
+  @keyframes sq-rotate {
+    0% {
+      transform: rotate(0);
     }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
+    100% {
+      transform: rotate(-360deg);
     }
   }

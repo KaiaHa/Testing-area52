@@ -17,9 +17,9 @@
     height: 100%;
 }
 /*button for the timeline*/
-.knapp{
-    border: solid 4px #ff00ff;
-    background-color: #ff05ff;
+.timeline-button{
+    border: solid 4px #000000;
+    background-color: #000000;
     width: 5px;
     Top: 5px;
     height: 5px;
@@ -45,26 +45,33 @@
     border: solid 3px green;
 }
 .body{
-    background-color: green;
+    background-color: reen;
 }
 
 /*order class, decide which order the container goes in the div (need to be modified)*/
 
-.order1{
+.timeline-box-order1{
     display:flex;
     order:1;
+    margin-right: 10rem;
+
 }
 
-.order2{
+.timeline-box-order2{
     display:flex;
     order:2;
+    position: absolute;
 }
 
-.order3{
+.timeline-box-order3{
     display:flex;
     order:3;
+    margin-left: 10rem;
 }
+.timeline-box-hide{
+    opacity: 0;
 
+}
 .container {
     border:1px solid lime;
     overflow:hidden;

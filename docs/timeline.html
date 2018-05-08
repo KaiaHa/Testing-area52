@@ -17,39 +17,53 @@
         <link rel="stylesheet" href="../css/test.css">
         <!-- CSS end -->
         <title>Code library</title>
-        <body class="body">
-            <div class="flex-direction-row flex-justify-center">
-                <!--timeline bar-->
-                <div class="timeline"></div>
-                <div class="order2 flex-align-self-center" onclick="toggle_visibility('foo')">
-                    <div class="knapp"></div>
-                </div>
-                <!--empty box order 1 keeps the container left.-->
-                <div class="order1">
-                    <div class="container-timeline-card container-timeline-blank"></div>
-                </div>
-                <!--content box order 3 keeps the container Right.-->
-                <div class="order3">
-                    <div id="showHideDiv" class="container-timeline-card container-timeline-filling">
-                        cåntainer båkks
-                    </div>
-                </div>
-                <!--new line in the timeline and repeating.-->
-            </div>
-            <div class="flex-direction-row flex-justify-center">
-                <div class="order2 flex-align-self-center">
-                    <div class="knapp"></div>
-                </div>
-                <div class="order3">
-                    <div class="container-timeline-card container-timeline-blank"></div>
-                </div>
-                <div class="order1">
-                    <div class="container-timeline-card container-timeline-filling">
-                        cåntainer båkks
-                    </div>
-                </div>
-            </div>
+<body class="body">
+    <div class="flex-direction-row flex-justify-center">
+        <!--timeline bar-->
+        <div class="timeline"></div>
+        <div
+            class="timeline-box-order2 flex-align-self-center"
+            onclick="toggle_visibility('foo')">
+            <div class="timeline-button"></div>
+        </div>
+        <!--empty box order 1 keeps the container left.-->
 
-        </body>
-    </head>
+        <!--content box order 3 keeps the container Right.-->
+        <div class="timeline-box-order3">
+            <div
+                id="showHideDiv"
+                class="container-timeline-card container-timeline-filling">
+                cåntainer båkks
+            </div>
+        </div>
+        <!--new line in the timeline and repeating.-->
+    </div>
+    <!-- Copy this for timeline box left! -->
+    <div class="flex-direction-row flex-justify-center">
+        <div class="timeline-box-order2 flex-align-self-center">
+            <div class="timeline-button"></div>
+        </div>
+        <div class="timeline-box-order1">
+            <div class="container-timeline-card container-timeline-filling">
+                cåntainer båkks
+            </div>
+        </div>
+    </div>
+    <!-- don't copy more -->
+    <div>
+        </div>
+        <!-- Copy this for timeline box right! -->
+        <div class="flex-direction-row flex-justify-center">
+            <div class="timeline-box-order2 flex-align-self-center">
+                <div class="timeline-button"></div>
+            </div>
+            <div class="timeline-box-order3">
+                <div class="container-timeline-card container-timeline-filling">
+                    cåntainer båkks
+                </div>
+            </div>
+        </div>
+        <!-- don't copy more -->
+    </body>
+</head>
 </html>
