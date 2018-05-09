@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
             <!-- CSS -->
-            <link rel="stylesheet" href="../css/colors.css">
-            <link rel="stylesheet" href="../css/flex.css">
-            <link rel="stylesheet" href="../css/fonts.css">
-            <link rel="stylesheet" href="../css/grid.css">
-            <link rel="stylesheet" href="../css/shadows.css">
-            <link rel="stylesheet" href="../css/sizes.css">
-            <link rel="stylesheet" href="../css/Templol.css">
-            <link rel="stylesheet" href="../css/utility.css">
-            <link rel="stylesheet" href="../css/visual.css">
-            <link rel="stylesheet" href="../css/forms.css">
-            <link rel="stylesheet" href="../css/timeline.css">
             <link rel="stylesheet" href="../css/sideline.css">
+            
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
             <!-- CSS end -->
 </head>
 <body>
-<div class="sideline-container">
-    <div class="sideline-progressbar">
-        <button class="active">login</button>
-        <button >choose interest</button>
-        <button >add friends</button>
-        <button >View map</button>
-    </div>
+        
+        
+        <button style="margin: 1rem;" id="toggleButton4">username toggle</button>
+        <button style="margin: 6rem;" id="toggleButton3">password toggle</button>
+        <button style="margin: 12rem;" id="toggleButton2">e-mail toggle</button>
+        <button style="margin: 18rem;" id="toggleButton1">confirmation toggle</button>
+        
+        
+        <ul class="timeline" id="timeline">
+          <li id="toggle1" class="li complete">
+            <div class="status">
+            </div><br>
+            <label for="toggle1">username</label>
+          </li>
+          <li id="toggle2" class="li complete">
+            <div class="status"></div><br>
+            <label for="toggle2">password</label>
+          </li>
+          <li id=toggle3 class="li complete">
+            <div class="status">
+            </div><br>
+            <label for="toggle3">e-mail</label>
+          </li>
+          <li id="toggle4" class="li complete">
+            <div class="status">
+            </div><br>
+            <label for="toggle4">confirmation</label>
+          </li>
+         </ul>      
+    <script src="../js/button.js">
+    
+    </script>
 </body>
 </html>
